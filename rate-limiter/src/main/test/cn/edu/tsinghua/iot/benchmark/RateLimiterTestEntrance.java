@@ -7,7 +7,7 @@
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
@@ -17,36 +17,12 @@
  * under the License.
  */
 
-package cn.edu.tsinghua.iot.benchmark.tsdb.enums;
+package cn.edu.tsinghua.iot.benchmark;
 
-public enum DBType {
-  IoTDB("IoTDB"),
-  DoubleIoTDB("DoubleIoTDB"),
-  InfluxDB("InfluxDB"),
-  OpenTSDB("OpenTSDB"),
-  CTSDB("CTSDB"),
-  CnosDB("CnosDB"),
-  KairosDB("KairosDB"),
-  TimescaleDB("TimescaleDB"),
-  FakeDB("FakeDB"),
-  TDengine("TDengine"),
-  QuestDB("QuestDB"),
-  MSSQLSERVER("MsSqlServer"),
-  VictoriaMetrics("VictoriaMetrics"),
-  PIArchive("PIArchive"),
-  SQLite("SQLite"),
-  IginX("IginX"),
-  SelfCheck("SelfCheck"),
-  RateLimiter("RateLimiter");
+import java.sql.SQLException;
 
-  private String DBType;
-
-  DBType(String DBType) {
-    this.DBType = DBType;
-  }
-
-  @Override
-  public String toString() {
-    return DBType;
-  }
+public class RateLimiterTestEntrance {
+    public static void main(String[] args) throws SQLException {
+        App.main(args);
+    }
 }

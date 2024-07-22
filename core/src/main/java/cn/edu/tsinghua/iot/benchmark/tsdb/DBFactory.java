@@ -45,6 +45,9 @@ public class DBFactory {
         case DB_IOT_130_JDBC:
           dbClass = Constants.IOTDB130_JDBC_CLASS;
           break;
+        case DB_RATE_LIMITER:
+          dbClass = Constants.RATE_LIMITER_SESSION_CLASS;
+          break;
         case DB_IOT_130_SESSION_BY_TABLET:
         case DB_IOT_130_SESSION_BY_RECORD:
         case DB_IOT_130_SESSION_BY_RECORDS:
