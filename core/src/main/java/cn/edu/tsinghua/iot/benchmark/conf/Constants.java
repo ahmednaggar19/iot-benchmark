@@ -58,8 +58,10 @@ public class Constants {
       "cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSession";
   public static final String IOTDB130_ROUNDROBIN_SESSION_CLASS =
       "cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBClusterSession";
-  public static final String RATE_LIMITER_SESSION_CLASS =
+  public static final String RATE_LIMITER_IOT_DB_SESSION_CLASS =
       "cn.edu.tsinghua.iot.benchmark.rate.limiter.RateLimiterSession";
+  public static final String RATE_LIMITER_INFLUX_SESSION_CLASS =
+      "cn.edu.tsinghua.iot.benchmark.rate.limiter.influx.InfluxDB";
 
   public static final String IOTDB110_JDBC_CLASS = "cn.edu.tsinghua.iot.benchmark.iotdb110.IoTDB";
   public static final String IOTDB110_SESSION_CLASS =

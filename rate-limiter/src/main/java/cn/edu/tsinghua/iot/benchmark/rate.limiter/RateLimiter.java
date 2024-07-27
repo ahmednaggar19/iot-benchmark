@@ -142,6 +142,9 @@ public class RateLimiter implements IDatabase {
 
   @Override
   public void close() throws TsdbException {
+    if (rateLimiterClient != null) {
+      rateLimiterClient.shutdown();
+    }
     if (ioTDBConnection != null) {
       ioTDBConnection.close();
     }
